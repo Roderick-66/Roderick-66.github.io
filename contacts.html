@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <title>Contacts - Kampus Mart</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/frame.css" rel="stylesheet" />
+  <link href="css/controls.css" rel="stylesheet" />
+  <link href="css/custom.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/footer.js"></script>
+</head>
+<body>
+  <style>
+body {
+  background: url('img/first onboard screen.png') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+.body-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.7); /* semi-transparent white overlay for readability */
+  z-index: 0;
+  pointer-events: none;
+}
+main, .main-content, .content {
+  position: relative;
+  z-index: 1;
+}
+</style>
+<div class="body-overlay"></div>
+  <div class="menu-container"></div>
+  <section style="padding: 40px 0;">
+    <div style="background: rgba(255,253,231,0.92); max-width: 500px; margin: 0 auto; border-radius: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); padding: 32px 28px; position: relative; z-index: 2;">
+      <h2 style="text-align: center; margin-bottom: 24px;">Contact Us</h2>
+      <!-- Replace the src below with your actual Google Form embed link -->
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc3nKbUqgZ902cxmRuLHUqfhqldx3Kzo8ygyCWP8zcxq_p3zQ/viewform?usp=header" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+  </section>
+  <div class="footer-container"></div>
+</body>
+</html> 

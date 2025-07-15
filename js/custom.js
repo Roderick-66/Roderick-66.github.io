@@ -254,3 +254,115 @@
 
   $(init);
 })();
+
+$(document).ready(function() {
+  // Home button scrolls to top
+  $(document).on('click', 'a[href="#top"]', function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  // Cart buttons open cart modal
+  $('#floating-cart-btn, #nav-cart-btn').on('click', function(e) {
+    e.preventDefault();
+    document.getElementById('cart-modal').style.display = 'flex';
+  });
+  $('#cart-modal').on('click', function(e) {
+    if (e.target === this) {
+      this.style.display = 'none';
+    }
+  });
+  // View Details buttons open product modal
+  $(document).on('click', '.view-details-btn', function(e) {
+    e.preventDefault();
+    document.getElementById('product-details-modal').style.display = 'flex';
+  });
+  $('#product-details-modal').on('click', function(e) {
+    if (e.target === this) {
+      this.style.display = 'none';
+    }
+  });
+  // Add to Cart in product modal opens cart modal
+  $('#product-details-modal .custom-button-flat').on('click', function(e) {
+    e.preventDefault();
+    document.getElementById('product-details-modal').style.display = 'none';
+    document.getElementById('cart-modal').style.display = 'flex';
+  });
+  // Screenshot modal logic
+  $(document).on('click', '.screenshot-thumb', function() {
+    var src = $(this).attr('src');
+    $('#screenshot-modal-img').attr('src', src);
+    $('#screenshot-modal').css('display', 'flex');
+  });
+  $('#screenshot-modal-close, #screenshot-modal').on('click', function(e) {
+    if (e.target === this || e.target.id === 'screenshot-modal-close') {
+      $('#screenshot-modal').css('display', 'none');
+      $('#screenshot-modal-img').attr('src', '');
+    }
+  });
+
+  // --- Kampus Mart Search Functionality ---
+  function filterProducts(searchTerm) {
+    var term = searchTerm.trim().toLowerCase();
+    var $cards = $("section:contains('Browse All Products') .product-card");
+    var anyVisible = false;
+    $cards.each(function() {
+      var $card = $(this);
+      var name = $card.find('h3').text().toLowerCase();
+      var desc = $card.find('.product-desc').text().toLowerCase();
+      var owner = $card.find('.product-owner').text().toLowerCase();
+      if (!term || name.includes(term) || desc.includes(term) || owner.includes(term)) {
+        $card.show();
+        anyVisible = true;
+      } else {
+        $card.hide();
+      }
+    });
+    // Show/hide no results message
+    if (!$('#no-search-results').length) {
+      $("section:contains('Browse All Products')").append('<div id="no-search-results" style="display:none; text-align:center; color:#b71c1c; font-weight:600; margin-top:18px;">No products found.</div>');
+    }
+    if (!anyVisible) {
+      $('#no-search-results').show();
+    } else {
+      $('#no-search-results').hide();
+    }
+  }
+
+  $('#hero-search-form, #browse-search-form').on('submit', function(e) {
+    e.preventDefault();
+    var val = $(this).find('input[type="text"]').val();
+    filterProducts(val);
+  });
+  // Optional: live filtering as user types in either box
+  $('#hero-search-input, #browse-search-input').on('input', function() {
+    var val = $(this).val();
+    filterProducts(val);
+  });
+
+  // Popup feature for main content
+  var contentSelector = '.content > .content-table, section > div, .info-container';
+  var $mainContent = $(contentSelector).first();
+  if ($mainContent.length) {
+    var $popupBtn = $('<button class="popup-content-btn" style="position:absolute;top:10px;right:10px;z-index:10;padding:8px 18px;background:#1976d2;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:600;">Show as Popup</button>');
+    $mainContent.css('position', 'relative').prepend($popupBtn);
+    $popupBtn.on('click', function() {
+      showContentPopup($mainContent.html());
+    });
+  }
+
+  // Add modal HTML to body if not present
+  if ($('#content-popup-modal').length === 0) {
+    $('body').append('<div id="content-popup-modal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.55);z-index:9999;align-items:center;justify-content:center;"><div id="content-popup-modal-inner" style="background:#fff;border-radius:14px;max-width:90vw;max-height:90vh;overflow:auto;box-shadow:0 4px 32px rgba(0,0,0,0.18);padding:32px 28px;position:relative;"><button id="close-content-popup" style="position:absolute;top:12px;right:18px;background:none;border:none;font-size:2rem;color:#888;cursor:pointer;">&times;</button><div id="content-popup-body"></div></div></div>');
+  }
+
+  // Close modal handler
+  $(document).on('click', '#close-content-popup', function() {
+    $('#content-popup-modal').hide();
+  });
+
+  // Show popup function
+  window.showContentPopup = function(contentHtml) {
+    $('#content-popup-body').html(contentHtml);
+    $('#content-popup-modal').css('display', 'flex');
+  };
+});
