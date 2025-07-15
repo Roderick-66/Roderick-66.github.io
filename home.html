@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head>
+  <title>Kampus Mart - Home</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/frame.css" rel="stylesheet" />
+  <link href="css/controls.css" rel="stylesheet" />
+  <link href="css/custom.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/custom.js"></script>
+</head>
+<body>
+  <div class="menu-container"></div>
+  <!-- Hero Banner with Search -->
+  <div class="banner" style="background: url('img/first onboard screen.png') no-repeat center; background-size: cover; height: 350px; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+    <h1 style="color: #fff; font-size: 2.5rem; text-shadow: 2px 2px 8px #000; margin-bottom: 20px;">Welcome to Kampus Mart</h1>
+    <form id="hero-search-form" style="width: 100%; max-width: 500px; display: flex;">
+      <input id="hero-search-input" type="text" placeholder="Search for products, categories, or sellers..." style="flex: 1; padding: 12px; border-radius: 8px 0 0 8px; border: none; font-size: 1rem;">
+      <button type="submit" style="padding: 12px 24px; border-radius: 0 8px 8px 0; border: none; background: #222; color: #fff; font-size: 1rem; cursor: pointer;">Search</button>
+    </form>
+  </div>
+  <!-- Product Categories -->
+  <section style="padding: 32px 0; background: #fff;">
+    <h2 style="text-align: center; margin-bottom: 24px;">Shop by Category</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 24px;">
+      <a href="category-info.html"><div class="category-card">Textbooks</div></a>
+      <a href="category-info.html"><div class="category-card">Electronics</div></a>
+      <a href="category-info.html"><div class="category-card">Clothing</div></a>
+      <a href="category-info.html"><div class="category-card">Dorm Essentials</div></a>
+      <a href="category-info.html"><div class="category-card">Sports & Outdoors</div></a>
+      <a href="category-info.html"><div class="category-card">More...</div></a>
+    </div>
+  </section>
+  <!-- Featured Products -->
+  <section style="padding: 32px 0; background: #f9f9f9;">
+    <h2 style="text-align: center; margin-bottom: 24px;">Featured Products</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 32px;">
+      <div class="product-card">
+        <img src="img/premium_photo-1661778544520-d56d4defb2e7.avif" alt="Good Quality Phone" class="product-img">
+        <div class="product-info">
+          <h3>Good Quality Phone</h3>
+          <p class="product-desc">High-end smartphone, excellent condition</p>
+          <div class="product-meta">
+            <span class="product-price">UGX 200,000 – UGX 250,000</span>
+            <span class="product-owner">by <a href="mailto:owner1@email.com">Alice</a></span>
+          </div>
+          <span class="product-offer">10% off for students!</span>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="img/istockphoto-1901874263-612x612.webp" alt="Mini Fridge" class="product-img">
+        <div class="product-info">
+          <h3>Mini Fridge</h3>
+          <p class="product-desc">Keeps things cold and can be used all day with a strong fridge guard</p>
+          <div class="product-meta">
+            <span class="product-price">UGX.200000 - UGX.250000</span>
+            <span class="product-owner">by <a href="mailto:owner2@email.com">Bob</a></span>
+          </div>
+          <span class="product-offer">comes with a frdge guard if you pay UGX.300000</span>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="img/istockphoto-488081679-612x612.webp" alt"Textbook" class="product-img">
+        <div class="product-info">
+          <h3>Subject Textbooks</h3>
+          <p class="product-desc">Available for all sujects especially available for those at School of Education</p>
+          <div class="product-meta">
+            <span class="product-price">UGX.50000 price negotiable</span>
+            <span class="product-owner">by <a href="mailto:owner3@email.com">Carol</a></span>
+          </div>
+          <span class="product-offer">cash on delivery</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Product Browsing Section -->
+  <section style="padding: 32px 0; background: #fff;">
+    <h2 style="text-align: center; margin-bottom: 24px;">Browse All Products</h2>
+    <form id="browse-search-form" style="max-width: 500px; margin: 0 auto 32px auto; display: flex;">
+      <input id="browse-search-input" type="text" placeholder="Search products..." style="flex: 1; padding: 12px; border-radius: 8px 0 0 8px; border: 1px solid #ccc; font-size: 1rem;">
+      <button type="submit" style="padding: 12px 24px; border-radius: 0 8px 8px 0; border: none; background: #1976d2; color: #fff; font-size: 1rem; cursor: pointer;">Search</button>
+    </form>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 32px;">
+      <div class="product-card">
+        <img src="img/premium_photo-1661778544520-d56d4defb2e7.avif" alt="Good Quality Phone" class="product-img">
+        <div class="product-info">
+          <h3>Good Quality Phone</h3>
+          <p class="product-desc">High-end smartphone, excellent condition</p>
+          <div class="product-meta">
+            <span class="product-price">UGX 200,000 – UGX 250,000</span>
+            <span class="product-owner">by <a href="mailto:owner4@email.com">David</a></span>
+          </div>
+          <button class="custom-button-flat view-details-btn" style="margin-top: 10px;">View Details</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="img/istockphoto-1901874263-612x612.webp" alt="Mini Fridge" class="product-img">
+        <div class="product-info">
+          <h3>Mini Fridge</h3>
+          <p class="product-desc">Compact, energy efficient</p>
+          <div class="product-meta">
+            <span class="product-price">$60</span>
+            <span class="product-owner">by <a href="mailto:owner5@email.com">Eve</a></span>
+          </div>
+          <button class="custom-button-flat view-details-btn" style="margin-top: 10px;">View Details</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="img/istockphoto-488081679-612x612.webp" alt="Campus Hoodie" class="product-img">
+        <div class="product-info">
+          <h3>Campus text books</h3>
+          <p class="product-desc">to help you in subjects such as math, history....</p>
+          <div class="product-meta">
+            <span class="product-price">UGX.50000 price negotiable</span>
+            <span class="product-owner">by <a href="mailto:owner6@email.com">Frank</a></span>
+          </div>
+          <button class="custom-button-flat view-details-btn" style="margin-top: 10px;">View Details</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="img/download.jpeg" alt="Product" class="product-img">
+        <div class="product-info">
+          <h3>Desk Organizer</h3>
+          <p class="product-desc">Wooden, multi-compartment</p>
+          <div class="product-meta">
+            <span class="product-price">$12</span>
+            <span class="product-owner">by <a href="mailto:owner7@email.com">Grace</a></span>
+          </div>
+          <button class="custom-button-flat view-details-btn" style="margin-top: 10px;">View Details</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- App Screenshots Section -->
+  <section style="padding: 32px 0; background: #fff;">
+    <h2 style="text-align: center; margin-bottom: 24px;">App Screenshots</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 32px;">
+      <div style="display: flex; flex-direction: column; align-items: center; max-width: 220px;">
+        <img src="img/search and filters.png" alt="My Cart Screen" class="screenshot-thumb" style="width: 100%; border-radius: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.10); margin-bottom: 10px; cursor: pointer;">
+        <div style="text-align: center; font-size: 1rem;">My Cart: View and manage your selected items, adjust quantities, and access product details.</div>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: center; max-width: 220px;">
+        <img src="img/Dashboard.png" alt="Home Screen" class="screenshot-thumb" style="width: 100%; border-radius: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.10); margin-bottom: 10px; cursor: pointer;">
+        <div style="text-align: center; font-size: 1rem;">Home: Discover trending and suggested products, search, and explore categories.</div>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: center; max-width: 220px;">
+        <img src="img/sign in.png" alt="Sign In Screen" class="screenshot-thumb" style="width: 100%; border-radius: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.10); margin-bottom: 10px; cursor: pointer;">
+        <div style="text-align: center; font-size: 1rem;">Guest mode: this is for first time people who wouldnt want to log in directly. we give you an opportunity to explore the app.</div>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: center; max-width: 220px;">
+        <img src="img/start page.png" alt="Welcome Screen" class="screenshot-thumb" style="width: 100%; border-radius: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.10); margin-bottom: 10px; cursor: pointer;">
+        <div style="text-align: center; font-size: 1rem;">Sign In: Choose to continue as a seller or buyer and access your personalized experience .</div>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: center; max-width: 220px;">
+        <img src="img/preference.png" alt="Choose Interests Screen" class="screenshot-thumb" style="width: 100%; border-radius: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.10); margin-bottom: 10px; cursor: pointer;">
+        <div style="text-align: center; font-size: 1rem;">Choose Interests: Select your interests to personalize your shopping experience.</div>
+      </div>
+    </div>
+  </section>
+  <!-- Screenshot Modal -->
+  <div id="screenshot-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); z-index:10010; align-items:center; justify-content:center;">
+    <span id="screenshot-modal-close" style="position:absolute; top:32px; right:48px; color:#fff; font-size:2.5rem; cursor:pointer; z-index:10011;">&times;</span>
+    <img id="screenshot-modal-img" src="" alt="App Screenshot" style="max-width:90vw; max-height:80vh; border-radius:18px; box-shadow:0 4px 32px #000;">
+  </div>
+  <!-- Product Details Modal (Demo) -->
+  <div id="product-details-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center;">
+    <div style="background:#fff; border-radius:16px; max-width:400px; width:90vw; padding:32px 24px; position:relative; box-shadow:0 8px 32px rgba(0,0,0,0.18);">
+      <button onclick="document.getElementById('product-details-modal').style.display='flex'" style="position:absolute; top:16px; right:16px; background:none; border:none; font-size:1.5rem; cursor:pointer;">&times;</button>
+      <img src="img/dummay-img.png" alt="Product" style="width:100%; border-radius:12px; margin-bottom:18px;">
+      <h3>Product Name (Demo)</h3>
+      <p style="color:#666;">This is a demo of the product details page in the Kampus Mart app. Here, users can view product info, adjust quantity, rate, and comment.</p>
+      <div style="margin:16px 0; display:flex; align-items:center; gap:8px;">
+        <label for="quantity" style="font-weight:600;">Quantity:</label>
+        <input id="quantity" type="number" min="1" value="1" style="width:60px; padding:4px 8px; border-radius:6px; border:1px solid #ccc;">
+      </div>
+      <div style="margin:16px 0;">
+        <span style="font-weight:600;">Your Rating:</span>
+        <span style="color:#FFD600; font-size:1.3rem;">&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+      </div>
+      <div style="margin:16px 0;">
+        <span style="font-weight:600;">Comments:</span>
+        <div style="background:#f5f5f5; border-radius:8px; padding:10px; margin:8px 0; max-height:80px; overflow:auto;">
+          <div style="margin-bottom:6px;"><strong>Alice:</strong> Great product!</div>
+          <div><strong>Bob:</strong> Is this still available?</div>
+        </div>
+        <input type="text" placeholder="Add a comment..." style="width:100%; padding:6px 10px; border-radius:6px; border:1px solid #ccc;">
+      </div>
+      <button class="custom-button-flat" style="width:100%; margin-top:10px;">Add to Cart (Demo)</button>
+    </div>
+  </div>
+  <!-- Floating Cart Button -->
+  <button id="floating-cart-btn" style="position:fixed; bottom:90px; right:32px; z-index:10001; background:#ffb300; color:#fff; border:none; border-radius:50%; width:60px; height:60px; box-shadow:0 4px 16px rgba(0,0,0,0.18); font-size:2rem; cursor:pointer; display:flex; align-items:center; justify-content:center;">
+    <span style="font-size:2rem;">&#128722;</span>
+  </button>
+  <!-- Cart Modal (Demo) -->
+  <div id="cart-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); z-index:10002; align-items:center; justify-content:center;">
+    <div style="background:#fff; border-radius:16px; max-width:400px; width:90vw; padding:32px 24px; position:relative; box-shadow:0 8px 32px rgba(0,0,0,0.18);">
+      <button onclick="document.getElementById('cart-modal').style.display='none'" style="position:absolute; top:16px; right:16px; background:none; border:none; font-size:1.5rem; cursor:pointer;">&times;</button>
+      <h3>Your Cart (Demo)</h3>
+      <div style="margin:18px 0;">
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+          <span>Wireless Headphones</span>
+          <input type="number" min="1" value="1" style="width:50px; padding:2px 6px; border-radius:6px; border:1px solid #ccc;">
+          <span>UGX.50000</span>
+        </div>
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+          <span>Campus Hoodie</span>
+          <input type="number" min="1" value="2" style="width:50px; padding:2px 6px; border-radius:6px; border:1px solid #ccc;">
+          <span>UGX.50000</span>
+        </div>
+      </div>
+      <div style="font-weight:600; margin-bottom:16px;">Total:UGX.100000</div>
+      <button class="custom-button-flat" style="width:100%;">Checkout (Demo)</button>
+    </div>
+  </div>
+  <div class="footer-container"></div>
+</body>
+</html> 
