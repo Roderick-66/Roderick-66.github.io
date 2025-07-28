@@ -75,7 +75,12 @@
               <li><a href="#accessibility-features">Accessibility Features</a></li>
               <li><a href="#technical-arch">Technical Architecture</a></li>
               <li><a href="#troubleshooting">Troubleshooting</a></li>
-              <li><a href="#credits">Credits & Acknowledgements</a></li>
+              <li><a href="#credits">Credits & Acknowledgements</a></li>                           
+            </ul>
+          </div>
+        </div>
+        <!--End Intro-->
+        <!--
               <li><a href="#buttons-and-inputs">Buttons and Inputs</a></li>
               <li><a href="#images-and-image-button">Images and Image Button</a></li>
               <li><a href="#text-around-image">Text around Image</a></li>
@@ -87,11 +92,8 @@
               <li><a href="#gallery">Gallery (responsive size)</a></li>
               <li><a href="#masonry">Masonry (responsive size)</a></li>
               <li><a href="#survey">Survey</a></li>
-            </ul>
-          </div>
-        </div>
-        <!--End Intro-->
-        <!-------------------------------------------------------------------------------------------->
+      
+        -------------------------------------------------------------------------------------------->
         <!--Start Text Only-->
         <div class="flex-row">
           <div class="flex-item flex-column">
@@ -181,7 +183,7 @@
         <!--Start Text Only-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 id="overview">Getting Started</h2>
+            <h2 id="getting-started">Getting Started</h2>
             <hr>                        
             <h3>For the Blind User</h3>
             <ul>
@@ -190,25 +192,157 @@
               <li>Say "Describe landmark"</li>
               <li>Say "Navigate to landmark" to start guided directions</li>
             </ul>            
-            <h3>Target Users</h3>
+          </div>
+        </div>
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Text Only-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 id="voice-commands">Voice Commands</h2>
+            <hr>                        
+            <h3>Universal Navigation</h3>
             <ul>
-              <li>Blind or visually impaired individuals needing accessible navigation</li>
-              <li>Tourists or local users who prefer hands-free guidance</li>
-              <li>Developers and researchers interested in accessible Flutter app design</li>                
+              <li>"Go to home", "Open map", "Show downloads"</li>
+              <li>Varians like "Switch to [screen]", "Display [screen]"</li>
             </ul>            
-            <h3>Key Highlights</h3>
-            <ul>              
-              <li>Seamless voice-to-screen navigation (150+ voice commands)</li>
-              <li>Smart audio control system per screen</li>
-              <li>Landmark selection and voice descriptions</li>
-              <li>Fully voice-guided tour discovery and playback</li>
-              <li>Custom interaction modes: exploration, discovery, emergency, etc.</li>
+            <h3>Map Commands</h3>
+            <ul>
+              <li>Zooming, panning, rotating, tilting map</li>
+              <li>Landmark exploration: "Describe landmark", "Next landmark"</li>
+              <li>Emergency mode:"SOS", "Find nearest hospital"</li>
+              <li>Voice control: "Pause voice", "Change language to [X]"</li>                
+            </ul>       
+          </div>
+        </div>
+        <!--End Intro-->
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Text Only-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 id="screen-overview">Screen Overview</h2>
+            <hr>                        
+            <h3>Home Screen</h3>
+            <ul>
+              <li>App introduction</li>
+              <li>Quick navigation</li>
+              <li>Voice settings</li>
             </ul>            
+            <h3>Map Screen</h3>
+            <ul>
+              <li>Map interaction</li>
+              <li>Landmark exploration</li>
+              <li>Multiple nodes</li>
+            </ul>
+            <h3>Discover Screen</h3>
+            <ul>
+              <li>Find and explore tours/places</li>
+              <li>Audio tour activation and details</li>
+            </ul>
+            <h3>Downloads screen</h3>
+            <ul>
+              <li>Download and manage offline tours</li>
+              <li>Audio playback controls</li>
+            </ul>
+            <h3>Help Screen</h3>
+            <ul>
+              <li>Guide for voice commands and support</li>
+            </ul>       
+          </div>
+        </div>
+        <!--End Intro-->
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Text Only-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 id="accessibility-features">Accessibility Features</h2>
+            <hr>                        
+            <h3>Voice-First Interaction</h3>
+            <ul>
+              <li>100% voice-controlled navigation and feedback</li>
+            </ul>            
+            <h3>Audio & Haptics</h3>
+            <ul>
+              <li>Feedback for every interaction</li>
+              <li>Narration adjustments: speed, style and language</li>
+            </ul>
+            <h3>Exploration Mode</h3>
+            <ul>
+              <li>Landmark selection with detailed descriptions</li>
+              <li>Voice-based route navigation</li>
+              <li>Switch between discovery, emergency and normal modes</li>
+            </ul>                   
+          </div>
+        </div>
+        <!--End Intro-->
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Text Only-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 id="technical-arch">Technical Architecture</h2>
+            <hr>                        
+            <h3>Voice Recognition System</h3>
+            <ul>
+              <li>Continuous listening</li>
+              <li>Context-aware commands</li>
+              <li>Multi-language support and noise filtering</li>
+            </ul>            
+            <h3>Audio Management System</h3>
+            <ul>
+              <li>One active audio source at a time</li>
+              <li>150ms audio transitions</li>
+              <li>Background audio supported during screen switches</li>
+            </ul>
+            <h3>Navigation Logic</h3>
+            <ul>
+              <li>Prevents duplicate commands</li>
+              <li>Real-time location and screen awareness</li>
+              <li>Modular command patterns for flexibility</li>
+            </ul>
+          </div>
+        </div>
+        <!--End Intro-->
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Text Only-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 id="troubleshooting">Troubleshooting</h2>
+            <hr>                        
+            <h3>Voice not recognised?</h3>
+            <ul>
+              <li>Try alternative phrases, speak slowly</li>
+            </ul>            
+            <h3>No audio?</h3>
+            <ul>
+              <li>Check system volume or mute settings</li>
+            </ul>
+            <h3>Command ignored?</h3>
+            <ul>
+              <li>Use "Help" to list valid phrases for current screen</li>
+            </ul>
+            <h3>Tour not loading?</h3>
+            <ul>
+              <li>Ensure offline files are downloaded or internet is on</li>
+            </ul>       
+          </div>
+        </div>
+        <!--End Intro-->
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Text Only-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 id="credits">Credits & Acknowledgements</h2>
+            <hr>                        
+            <p class="text">
+              <b>Developed by:</b> The EchoPath Team<br>
+              <b>Powered by:</b> Flutter, Firebase, Google Maps, speech_to_text,
+              flutter_tts, geolocator and community plugins
+              <b>Special thanks to:</b> Blind user communities in Uganda who inspired the core features.
+            </p>       
           </div>
         </div>
         <!--End Text Only-->
         <!-------------------------------------------------------------------------------------------->
-        <!--Start Text with Buttons-->
+        <!--Start Text with Buttons
         <div class="flex-row">
           <div class="flex-item flex-column">
             <h2 id="buttons-and-inputs">Buttons and Inputs</h2>
@@ -337,9 +471,9 @@
             </p>
           </div>
         </div>
-        <!--End Text with Buttons-->
+        <End Text with Buttons-->
         <!-------------------------------------------------------------------------------------------->
-        <!--Start Text with Images and Image buttons-->
+        <!--Start Text with Images and Image buttons--
         <div class="flex-row">
           <div class="flex-item flex-column">
             <h2 id="images-and-image-button">Images and Image Button</h2>
@@ -376,7 +510,7 @@
         </div>
         <!--End Text with Images and Image buttons-->
         <!-------------------------------------------------------------------------------------------->
-        <!--Start Text around Image-->
+        <!--Start Text around Image--
         <div class="flex-row">
           <div class="flex-item flex-column">
             <h2 id="text-around-image">Text around Image</h2>
@@ -400,7 +534,7 @@
           </div>
         </div>
         <!--End Text around Image-->
-        <!-------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------------------------------------
       </div>
     </div>
     <div class="banner" style="background: url('img/dummy-background.jpeg') no-repeat center; background-size: cover; height: 500px;">
@@ -419,8 +553,8 @@
     </div>
     <div class="content">
       <div class="content-table flex-column">
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Text with Centered Image and Table-->
+        -------------------------------------------------------------------------------------------->
+        <!--Start Text with Centered Image and Table--
         <div class="flex-row">
           <div class="flex-item flex-column">
             <h2 id="centered-image-and-table" class="no-top-margin">Centered Image and Table</h2>
@@ -629,9 +763,9 @@
             </p>
           </div>
         </div>
-        <!--End Text with Centered Image and Table-->
+        --End Text with Centered Image and Table-->
         <!-------------------------------------------------------------------------------------------->
-        <!--Start Text with Adaptive Image-->
+        <!--Start Text with Adaptive Image--
         <div class="flex-row">
           <div class="flex-item flex-column">
             <h2 id="adaptive-image">Adaptive Image</h2>
@@ -651,8 +785,8 @@
             </p>
           </div>
         </div>
-        <!--End Text with Adaptive Image-->
-        <!-------------------------------------------------------------------------------------------->
+        --End Text with Adaptive Image-->
+        <!--------------------------------------------------------------------------------------------
       </div>
     </div>
     <div class="banner" style="background: url('img/dummy-background.jpeg') no-repeat center; background-size: cover; height: 500px;"></div>
@@ -672,8 +806,8 @@
     </div>
     <div class="content">
       <div class="content-table flex-column">
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Text with Images and Videos-->
+        -------------------------------------------------------------------------------------------->
+        <!--Start Text with Images and Videos-
         <div class="flex-row">
           <div class="flex-item flex-column">
             <h2 id="text-with-images-and-videos" class="no-top-margin">Text with Images and Videos</h2>
@@ -770,9 +904,9 @@
             </p>
           </div>
         </div>
-        <!--End Text with Images and Videos-->
+        --End Text with Images and Videos-->
         <!-------------------------------------------------------------------------------------------->
-        <!--Start Text with Iframe-->
+        <!--Start Text with Iframe--
         <div class="flex-row">
           <div class="flex-item flex-column">
             <h2 id="iframe">Iframe</h2>
@@ -792,9 +926,9 @@
             </p>
           </div>
         </div>
-        <!--END Text with Iframe-->
+        --END Text with Iframe-->
         <!-------------------------------------------------------------------------------------------->
-        <!--Start List of Projects-->
+        <!--Start List of Projects--
         <div class="flex-row">
           <div class="flex-item flex-column full-width">
             <h2 id="list-of-projects">List of Projects</h2>
@@ -840,9 +974,9 @@
             </p>
           </div>
         </div>
-        <!--End List of Projects-->
+        --End List of Projects-->
         <!-------------------------------------------------------------------------------------------->
-        <!--Start Gallery-->
+        <!--Start Gallery--
         <div class="flex-row">
           <div class="flex-item flex-column">
             <h2 id="gallery">Gallery (responsive size)</h2>
@@ -943,9 +1077,9 @@
             </p>
           </div>
         </div>
-        <!--End Gallery-->
+        --End Gallery-->
         <!-------------------------------------------------------------------------------------------->
-        <!--Start Masonry-->
+        <!--Start Masonry--
         <div class="flex-row">
           <div class="flex-item flex-column">
             <h2 id="masonry">Masonry (responsive size)</h2>
@@ -1020,9 +1154,9 @@
             </p>
           </div>
         </div>
-        <!--End Masonry-->
+        --End Masonry-->
         <!-------------------------------------------------------------------------------------------->
-        <!--Start Survey-->
+        <!--Start Survey
         <div class="flex-row">
           <div class="flex-item flex-column">
             <h2 id="survey">Survey</h2>
@@ -1088,7 +1222,7 @@
             </p>
           </div>
         </div>
-        <!--End Survey-->
+        --End Survey-->
         <!-------------------------------------------------------------------------------------------->
         <!--Start Credits-->
         <div class="flex-row">
